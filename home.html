@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!--tailwindcss-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+</head>
+<body class="bg-[#F4F5F7] h-[100vh]">
+    <div class="bg-white p-3 border-b-xl">
+    <div class="border-2 min-h-[50px] flex justify-between items-center p-3 bg-white rounded-lg shadow max-w-lg mx-auto border-b-1 border-gray-400">
+        <div class="flex"> 
+            <img src="assets/Group.png" class="h-[50px]" alt="">
+            <div class="flex-col">
+                <h2 class="font-bold">$<span id="available-balance">45000</span></h2>
+                <p class=" text-gray-600">Available Balance</p>
+            </div>
+        </div>    
+        <div>
+            <button class="btn  text-gray-600"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-900"></i>Logout</button>
+        </div>
+    </div>
+        <div class="max-w-lg mx-auto p-3">
+         <h1 class="text-2xl font-bold">🔥welcome to yashfas design</h1>
+         <p class=" text-gray-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas laboriosam vel, quibusdam recusandae velit!</p>
+    </div>
+    
+    <div class=" min-h-[200px] grid grid-cols-3 max-w-lg mx-auto gap-4 p-3">
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/wallet1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+    </div>
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/transaction1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+
+    </div>
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/send1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+    </div>
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/purse1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+    </div>
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/money1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+    </div>
+        <div class="border-1 text-center p-3 rounded-lg">
+            <img src="assets/purse1.png" class="mx-auto" alt="">
+            <h2>Add Money</h2>
+    </div>
+</div>
+    </div>
+    <div class="bg-purple-100 h-auto">
+    <div  class="all-sections-form justify-center mx-auto max-w-lg bg-white rounded-2xl p-3 mt-5" >
+    <div>
+    <h1 class="text-black text-2xl font-bold ">Add Money</h1>
+    </div>
+        <div class="mt-1">
+        <fieldset class="fieldset">
+  <legend class="fieldset-legend">select a bank</legend>
+  <select id="bank" class="select w-full rounded-4xl">
+    <option disabled selected>select a bank</option>
+    <option>ABC bank </option>
+    <option>IFIC Bank</option>
+    <option>BANGLA Bank</option>
+  </select>
+</fieldset>
+        </div>
+        <div class="mt-1">
+            <fieldset class="fieldset">
+  <legend class="fieldset-legend">bank account Number</legend>
+  <input id="account-number" type="text"class="input mt-2 rounded-2xl w-full rounded-4xl" placeholder="Enter your bank number" />
+</fieldset>
+        </div>
+        <div class="mt-1">
+            <fieldset class="fieldset">
+  <legend class="fieldset-legend">add amount</legend>
+  <input id="amount" type="text" class="input mt-2 rounded-2xl w-full rounded-4xl" placeholder="Enter your amount" />
+</fieldset>
+        </div>
+        <div class="mt-1">
+            <fieldset class="fieldset">
+  <legend class="fieldset-legend">pin Number</legend>
+  <input id="pin-number" type="text" class="input mt-2 rounded-2xl w-full rounded-4xl" placeholder="Enter your pin number" />
+</fieldset>
+        </div>
+        <div class="mt-3">
+        <button id="add-money-btn" class="btn btn-block bg-blue-800 text-white rounded-3xl">Add Money</button>
+        </div>
+   </div> 
+   </div>
+<script src="home.js"></script>
+</body>
+</html>
