@@ -37,3 +37,22 @@ document.getElementById("cashout-money-btn-event").addEventListener("click",func
     document.getElementById("cash-out-section").style.display="block"
     document.getElementById("add-money-section").style.display="none"
 })
+
+
+//cash out related javas
+
+document.getElementById("cash-out-money-btn").addEventListener("click",function(e){
+    e.preventDefault();
+    const agentNumber = parseInt(document.getElementById("bank-accountagent-number").value);
+    const amountMoneyCashout = parseInt (document.getElementById("cash-out-amount-number").value);
+    const pinNumberCashout = parseInt(document.getElementById("cash-out-pin-number").value);
+    const availableBalance = parseInt(document.getElementById("available-balance").innerText); 
+
+console.log(availableBalance);
+if(pinNumberCashout!== validpin){
+    alert("invalid pin");
+    return;
+}
+const newAvailableBalanceCashout =availableBalance-amountMoneyCashout;
+document.getElementById("available-balance").innerText= newAvailableBalanceCashout;
+ })
