@@ -17,14 +17,23 @@ document.getElementById("add-money-btn").addEventListener("click",function(e){
 //document.getElementById("pin-number").value = "";
 const availableBalance = parseInt(document.getElementById("available-balance").innerText)
 console.log(availableBalance)
-if(pinNumber!== validpin){
-    alert("invalid pin");
-    return;
-}
+
 if(validaccountNumber!== accountNumber){
    alert("invalid account number");
    return;
 }
+if(pinNumber!== validpin){
+    alert("invalid pin");
+    return;
+}
 const newAvailableBalance =amountMoney + availableBalance;
 document.getElementById("available-balance").innerText= newAvailableBalance;
+})
+document.getElementById("add-money-btn-event").addEventListener("click",function(){
+    document.getElementById("cash-out-section").style.display="none"
+    document.getElementById("add-money-section").style.display="block"
+})
+document.getElementById("cashout-money-btn-event").addEventListener("click",function(){
+    document.getElementById("cash-out-section").style.display="block"
+    document.getElementById("add-money-section").style.display="none"
 })
